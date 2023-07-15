@@ -143,6 +143,10 @@ img {
   margin-bottom: 24px;
 }
 
+.bordered {
+  border-left: 5px solid #5CA5A5;;
+}
+
 .job-image {
   margin-right: 24px;
 }
@@ -232,6 +236,9 @@ img {
 
 .job-qualifications {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .job-qualifications-item {
@@ -244,10 +251,19 @@ img {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: -0.1px;
+  cursor: pointer;
 }
 
 .job-qualifications-item + .job-qualifications-item {
   margin-left: 16px;
+}
+
+.job-qualifications-item:hover {
+  background-color: #5CA5A5;
+  color: #fff;
+}
+.job-qualifications-item:active {
+opacity: 0.9;
 }
 
 
